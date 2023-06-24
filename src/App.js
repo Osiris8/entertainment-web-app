@@ -1,11 +1,9 @@
 import "./styles/App.css";
+import "./styles/Flexbox.css";
+import Navigation from "Components/Navigation";
 
 function App() {
-  return (
-    <div>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    </div>
-  );
+  return <Navigation />;
 }
 
 export default App;
