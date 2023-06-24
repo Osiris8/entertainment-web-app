@@ -1,6 +1,6 @@
 import "./styles/App.css";
 import "./styles/Flexbox.css";
-import Navigation from "Components/Navigation";
+import Navigation from "./Components/Navigation";
 
 function App() {
   return <Navigation />;
