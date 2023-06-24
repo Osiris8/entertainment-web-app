@@ -13,9 +13,6 @@
   background-color: #334155;
 }
 
-.justify-content-space-betweeen {
-  justify-content: space-between;
-}
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {

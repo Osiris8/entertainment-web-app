@@ -9,3 +9,11 @@
 .justify-content-center {
   justify-content: center;
 }
+
+.center {
+  margin: 0 auto;
+}
+
+.justify-content-space-betweeen {
+  justify-content: space-between;
+}
