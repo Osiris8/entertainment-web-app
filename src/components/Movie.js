@@ -9,7 +9,7 @@ function Movie() {
         />
       </div>
       <div className="col-2 mt-3">
-        <div class="card">
+        <div class="card card-size">
           <img
             src="https://image.tmdb.org/t/p/original//fJbw16AwM59dEhSiCIAfFGgIgOP.jpg"
             class="card-img-top"
@@ -21,7 +21,7 @@ function Movie() {
             <h6 className="mt-1">
               8/10 <i class="fa fa-star" aria-hidden="true"></i>
             </h6>
-            <div className="flex flex-direction-row justify-content-space-betweeen  mt-2">
+            <div className="flex flex-direction-row gap-genre mt-2">
               <span class="badge text-bg-dark">Dark</span>
               <span class="badge text-bg-dark">Dark</span>
               <span class="badge text-bg-dark">Dark</span>
@@ -32,7 +32,7 @@ function Movie() {
               bulk of the card's content.
             </p>
             <img
-              className="center"
+              className="flex center"
               width="25"
               height="25"
               src="https://img.icons8.com/ios/50/like--v1.png"
