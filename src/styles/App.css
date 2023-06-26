@@ -9,6 +9,14 @@
   margin: 5px;
 }
 
+.margin-16 {
+  margin: 16px;
+}
+
+.padding-5 {
+  padding: 5px;
+}
+
 .padding-16 {
   padding: 16px;
 }
@@ -24,6 +32,9 @@
   height: auto;
 }
 
+.card-size {
+  width: 18rem;
+}
 body {
   background-color: #030712;
   width: 100%;
