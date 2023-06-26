@@ -1,6 +1,6 @@
 function Movie() {
   return (
-    <div className="col-lg-10">
+    <div className="col-lg-10 padding-32">
       <div className="col-12">
         <input
           class="form-control"
@@ -21,7 +21,7 @@ function Movie() {
             <h6 className="mt-1">
               8/10 <i class="fa fa-star" aria-hidden="true"></i>
             </h6>
-            <div className="flex justify-content-space-betweeen mt-2">
+            <div className="flex flex-direction-row justify-content-space-betweeen  mt-2">
               <span class="badge text-bg-dark">Dark</span>
               <span class="badge text-bg-dark">Dark</span>
               <span class="badge text-bg-dark">Dark</span>

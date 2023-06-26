@@ -1,24 +1,34 @@
 function Navigation() {
   return (
-    <div className="col-2">
-      <div className=" flex flex-direction-column nav-bg-color margin-16 padding-16">
-        <ul class="">
-          <li>
-            <i class="fa fa-film" aria-hidden="true"></i>
-          </li>
-          <li>
-            <i class="fa fa-home" aria-hidden="true"></i>
-          </li>
-          <li>
-            <i class="fa fa-heart" aria-hidden="true"></i>
-          </li>
-          <li>
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-          </li>
-          <li>
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
-          </li>
-        </ul>
+    <div className="col-2 container-size">
+      <div
+        className="flex flex-direction-column gap-nav nav-bg-color  margin-5
+       padding-16 container-height rounded"
+      >
+        <img
+          src="https://img.icons8.com/ios/100/000000/movie--v1.png"
+          alt="movie--v1"
+        />
+
+        <img
+          src="https://img.icons8.com/fluency-systems-filled/48/home.png"
+          alt="home"
+        />
+
+        <img
+          src="https://img.icons8.com/ios-filled/50/like--v1.png"
+          alt="like--v1"
+        />
+
+        <img
+          src="https://img.icons8.com/ios/100/circled-down-2.png"
+          alt="circled-down-2"
+        />
+
+        <img
+          src="https://img.icons8.com/ios/100/circled-up-2.png"
+          alt="circled-up-2"
+        />
       </div>
     </div>
   );

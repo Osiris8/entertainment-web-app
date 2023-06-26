@@ -17,3 +17,11 @@
 .justify-content-space-betweeen {
   justify-content: space-between;
 }
+
+.gap-nav {
+  gap: 30px;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}

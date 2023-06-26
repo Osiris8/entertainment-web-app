@@ -6,8 +6,10 @@ import Movie from "./components/Movie";
 function App() {
   return (
     <div className="container">
-      <Navigation />
-      <Movie />
+      <div className="row">
+        <Navigation />
+        <Movie />
+      </div>
     </div>
   );
 }
