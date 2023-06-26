@@ -18,8 +18,24 @@
   justify-content: space-between;
 }
 
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-star {
+  justify-content: flex-start;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
 .gap-nav {
   gap: 30px;
+}
+
+.gap-genre {
+  gap: 10px;
 }
 
 .flex-direction-row {
