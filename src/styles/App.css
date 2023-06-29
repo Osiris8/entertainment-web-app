@@ -33,7 +33,7 @@
 }
 
 .card-size {
-  width: 18rem;
+  width: 10rem;
 }
 body {
   background-color: #030712;
@@ -43,6 +43,10 @@ body {
 
 .padding-5 {
   padding: 5px;
+}
+
+.heart-color {
+  color: brown;
 }
 
 /****** Media queries ***********/
