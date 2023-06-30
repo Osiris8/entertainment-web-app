@@ -49,6 +49,18 @@ body {
   color: brown;
 }
 
+.list-style {
+  list-style-type: none;
+}
+.text-scroll {
+  height: 145px;
+  overflow-y: scroll;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
