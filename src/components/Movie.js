@@ -19,7 +19,7 @@ function Movie() {
     <div className="container">
       <div className="row">
         <input
-          class="form-control"
+          class="form-control mt-5"
           type="text"
           placeholder="Search for movies and TV series"
           onChange={(e) => setSearch(e.target.value)}
