@@ -79,12 +79,17 @@ function Card({ movie }) {
       </div>
     ));
   }
+
   return (
-    <div className="col-lg-4 mt-3">
+    <div className="col-lg-3 col-md-4 col-sm-12 mt-3">
       <div class="card ">
         <img
-          src={"https://image.tmdb.org/t/p/original/" + movie.poster_path}
-          class="card-img-top"
+          src={
+            movie.poster_path
+              ? "https://image.tmdb.org/t/p/original/" + movie.poster_path
+              : "/no-movie.jpg"
+          }
+          className="img-fluid"
           alt={movie.title}
         />
         <div class="card-body height-customize">
@@ -102,13 +107,6 @@ function Card({ movie }) {
           </div>
           <h6 className="mt-2">Synopsie</h6>
           <p class="card-text text-scroll">{movie.overview}</p>
-          <img
-            className="flex center heart-color"
-            width="25"
-            height="25"
-            src="https://img.icons8.com/ios/50/like--v1.png"
-            alt="like--v1"
-          />
         </div>
       </div>
     </div>
