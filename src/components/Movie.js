@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 function Movie() {
   const [data, setData] = useState([]);
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("code");
+  const [sortTopFlop, setSortTopFlop] = useState("code");
   useEffect(() => {
     axios
       .get(
@@ -15,19 +16,54 @@ function Movie() {
   }, [search]);
 
   return (
-    <div className="col-lg-10 padding-32">
-      <input
-        class="form-control"
-        type="text"
-        placeholder="Search for movies and TV series"
-        onChange={(e) => setSearch(e.target.value)}
-      />
+    <div className="container">
+      <div className="row">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Search for movies and TV series"
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <div className="container">
+          <div className="row">
+            <div className="flex justify-content-center">
+              <button
+                type="button"
+                class="btn btn-dark margin-16"
+                id="topToFlop"
+                onClick={() => setSortTopFlop("topToFlop")}
+              >
+                Top
+              </button>
 
-      <div className="container">
-        <div className="row">
-          {data.map((movie) => {
-            return <Card key={movie.id} movie={movie} />;
-          })}
+              <button
+                type="button"
+                class="btn btn-dark margin-16"
+                id="flopToTop"
+                onClick={() => setSortTopFlop("flopToTop")}
+              >
+                Flop
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="container">
+          <div className="row">
+            {data
+              .sort((a, b) => {
+                if (sortTopFlop === "topToFlop") {
+                  return b.vote_average - a.vote_average;
+                } else if (sortTopFlop === "flopToTop") {
+                  return a.vote_average - b.vote_average;
+                } else {
+                  return 0; // Valeur par défaut si sortTopFlop ne correspond à aucune condition
+                }
+              })
+              .map((movie) => {
+                return <Card key={movie.id} movie={movie} />;
+              })}
+          </div>
         </div>
       </div>
     </div>
